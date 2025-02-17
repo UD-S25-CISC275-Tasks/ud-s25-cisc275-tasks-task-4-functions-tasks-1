@@ -41,7 +41,7 @@ export function shout(message: string): string {
  * mark. Do not use an `if` statement in solving this question.
  */
 export function isQuestion(message: string): boolean {
-    return true;
+    return message.slice(-1) === "?";
 }
 
 /**
@@ -50,5 +50,11 @@ export function isQuestion(message: string): boolean {
  * upper or lower case), then return `false`. Otherwise, return `null`.
  */
 export function convertYesNo(word: string): boolean | null {
-    return true;
+    if (word.toLowerCase() === "yes") {
+        return true;
+    } else if (word.toLowerCase() === "no") {
+        return false;
+    } else {
+        return null;
+    }
 }
