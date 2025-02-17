@@ -5,7 +5,6 @@
  */
 export function fahrenheitToCelius(temperature: number): number {
     return (temperature - 32) * (5 / 9);
-    return 0;
 }
 
 /**
