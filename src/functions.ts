@@ -56,5 +56,6 @@ export function convertYesNo(word: string): boolean | null {
         return false;
     }
     //else return null
+    //
     return null;
 }
